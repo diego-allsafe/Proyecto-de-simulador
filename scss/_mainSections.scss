@@ -1,0 +1,17 @@
+#fondoVerde {
+  background-image: url("../img/fondoVerde3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#input-boton {
+  background-color: #95e742;
+  color: black;
+  padding: calc($ancho * 7) calc($ancho * 10);
+  margin: 8px 0;
+  margin-left: 20px;
+  border: none;
+  border-radius: calc($ancho * 3)-2;
+  cursor: pointer;
+  box-shadow: $box $box $box black;
+}

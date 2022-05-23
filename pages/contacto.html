@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+    name="description"
+    content="Salon de estetica y belleza. Tratamientos faciales y corporales. Alternativa a las intervenciones quirurgicas. Embellecer la piel. Potenciar la belleza"
+    />
+    <meta
+    name="keywords"
+    content="salon, belleza, estetica, depilacion, cosmetologia, podologia, uñas, pies y manos, electroporacion, recoleta, Bella salon de Estetica y Belleza"
+    />    
+    
+    <!-- Iconos Boostrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Contacto</title>
+  </head>
+  <body id="fondoVerde">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+      <div class="container text-success lead">
+        <a href="../index.html"
+          ><img src="../img/logo-bella.jpg" alt="logo de marca"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navHamburguesa"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navHamburguesa">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link text-success fw-bolder" href="../index.html"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-success fw-bolder"
+                href="servicios.html"
+                >Servicios</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-success fw-bolder"
+                href="sobremi.html"
+                >Sobre Mi</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-success fw-bolder"
+                href="novedades.html"
+                >Novedades</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-success fw-bolder"
+                href="contacto.html"
+                >Contacto</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    </header>
+    <main class="container p-5">
+      <div class="container text-center text-success">
+        <h1>ESTAMOS PARA RESPONDERTE</h1>
+        <h2 class="p-3">
+          Escribinos y consultanos cualquier duda que tengas. <br />
+          Te estamos esperando.
+        </h2>
+      </div>
+      <div class="container p-5 bg-light rounded border border-success">
+
+        <form class="row g-3"  id="form" action="https://formspree.io/f/xdobbnjg" method="POST">
+
+          <div class="col">
+            <label for="inputNombre" class="form-label">Nombre (*)</label>
+            <input 
+            type="text" 
+            name="nombre" 
+            id="nombre" 
+            class="form-control" 
+            placeholder="Tu nombre..." 
+            aria-label="Nombre">
+          </div>
+
+          <div class="col">
+            <label for="inputApellido" class="form-label">Apellido (*)</label>
+            <input required type="text" name="apellido" class="form-control" placeholder="Tu apellido..." aria-label="Apellido">
+          </div>
+
+          <div class="col-12">
+            <label for="inputAsunto" class="form-label">Asunto (*)</label>
+            <select id="inputAsunto" name="asunto" class="form-select">
+              <option selected>Seleccionar tu opcion...</option>
+              <option>Solicitud de Turno - Indicame que Servicio necesitas</option>
+              <option>Modificacion de Turno</option>
+              <option>Cancelacion de Turno</option>
+              <option>Necesito la Factura</option>
+              <option>Solo consultar...</option>
+            </select>
+          </div>      
+
+          <div class="form-floating">
+            <textarea required class="form-control" name="comentario" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+            <label for="floatingTextarea">Comentarios...</label>
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck">
+                Deseo recibir "Novedades" <br> (*) Campos obligatorios
+              </label>
+            </div>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-success" id="input-boton">Enviar</button>
+          </div>
+          <div id="msj"></div>
+        </form>
+        
+      </div>
+    </main>
+    <footer class="container-fluid bg-dark p-5 text-light">
+      <div class="row">
+        <div class="col text-center">Buscanos en las redes</div>
+        <div class="col text-center">
+          <a href="#"><i class="bi bi-facebook" style="color: white"></i></a>
+          <a href="#"><i class="bi bi-twitter" style="color: white"></i></a>
+          <a href="#"><i class="bi bi-instagram" style="color: white"></i></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col text-center">
+          &copy; Copyright 2022 BELLA I Creada por D.E.G.
+        </div>
+      </div>
+    </footer>
+    <!-- JavaScript -->
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
