@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="../css/style.css" />
     <title>Contacto</title>
   </head>
-  <body id="fondoVerde">
+  <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
       <div class="container text-success lead">
         <a href="../index.html"
@@ -71,13 +71,50 @@
                 >Contacto</a
               >
             </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-success fw-bolder"
+                href="ingreso.html"
+                >Ingreso</a
+              >
+            </li>
           </ul>
         </div>
       </div>
     </nav>
     </header>
     <main class="container p-5">
-      
+      <div class="row">
+        <div class="col text-center text-success">
+          <h2>Ingresar</h2>
+        </div>
+      </div>
+      <div class="card mb-3 container p-1" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="../img/flores_blancas_1584556703.jpg" class="img-fluid rounded-start" alt="Tallo de hojas">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <form action="">
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                  <label for="password" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="password" required>
+                </div>
+                <div class="mb-3 form-check">
+                  <label for="check" class="form-check-label">Recordar</label>
+                  <input type="checkbox" class="form-check-input" id="check" required>
+                </div>
+                <button type="submit" class="btn btn-success" id="guardar"></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div> 
     </main>
     <footer class="container-fluid bg-dark p-5 text-light">
       <div class="row">
@@ -96,6 +133,6 @@
     </footer>
     <!-- JavaScript -->
     <script src="../js/bootstrap.js"></script>
-    <script src="../js/main.js"></script>
+    <script src="../js/ingreso.js"></script>
   </body>
 </html>
